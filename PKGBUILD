@@ -1,43 +1,35 @@
 pkgname=keskos-desktop-meta
 pkgver=0.1.0
-pkgrel=1
-pkgdesc="Meta package for the default KeskOS desktop shell, branding, and installer stack"
+pkgrel=2
+pkgdesc="Meta package for the default KeskOS Plasma desktop shell and visual stack"
 arch=(any)
-url="https://github.com/memegeko/keskos"
+url="https://github.com/KeskOS/keskos-desktop-meta"
 license=(GPL-3.0-or-later)
 depends=(
-  calamares
-  discover
   dolphin
-  dunst
-  kate
   konsole
   kwin
-  keskos-branding
-  keskos-browser-startpage
-  keskos-calamares-branding
-  keskos-installer-debug-log
-  keskos-kickoff
-  keskos-plasma-layout
-  keskos-quickshell-hud
-  keskos-sddm-theme
-  keskos-settings
-  keskos-theme
-  keskos-welcome
-  keskos-workspace-switcher
-  kvantum
-  papirus-icon-theme
-  partitionmanager
+  networkmanager
   plasma-desktop
   plasma-nm
   plasma-workspace
-  playerctl
-  qt6ct
-  quickshell
+  powerdevil
+  bluedevil
+  pipewire
   sddm
   systemsettings
+  wireplumber
+  xdg-desktop-portal-kde
+  keskos-branding
+  keskos-browser-startpage
+  keskos-kickoff
+  keskos-plasma-layout
+  keskos-plymouth
+  keskos-quickshell-hud
+  keskos-sddm-theme
+  keskos-theme
+  keskos-workspace-switcher
 )
-optdepends=('keskos-plymouth: stage the in-progress Plymouth splash assets for future boot theme work')
 source=()
 sha256sums=()
 

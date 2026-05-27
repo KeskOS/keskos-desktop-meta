@@ -1,13 +1,8 @@
 # keskos-desktop-meta
 
-Meta package for the default KeskOS desktop shell, branding, and installer stack
+Meta package for the default KeskOS Plasma desktop shell and visual stack.
 
-This repository contains the standalone Arch package source for `keskos-desktop-meta`.
-
-## Contents
-
-- `PKGBUILD`
-- `files/` for packaged assets, scripts, themes, or source snapshots where needed
+This repository stays separate from `keskos-desktop`, but it depends on the package names produced by that consolidated desktop repository.
 
 ## Build
 
@@ -15,9 +10,8 @@ This repository contains the standalone Arch package source for `keskos-desktop-
 makepkg -s --noconfirm
 ```
 
-## Package Metadata
+## Notes
 
-- Version: `0.1.0`
-- Architectures: `any`
-
-This repo is intended to be consumed by the KeskOS package build server and can also be built locally with standard Arch tooling.
+- This repo remains its own pacman meta package source.
+- It depends on the modular desktop packages published from `https://github.com/KeskOS/keskos-desktop`.
+- It intentionally avoids large KDE application meta packages.
