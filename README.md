@@ -1,10 +1,10 @@
 # keskos-desktop-meta
 
-`keskos-desktop-meta` is the default Plasma desktop bundle for KeskOS and depends on the package names produced by the desktop stack repos.
+`keskos-desktop-meta` is the curated Plasma desktop bundle for KeskOS and depends on the package names produced by the desktop stack repos.
 
 ## What this is
 
-This repository builds a pacman meta package. The package itself is empty at runtime and exists only to pull in a curated group of packages through dependencies.
+This repository builds a pacman meta package. The package itself is empty at runtime and exists only to pull in a curated Plasma desktop base through dependencies instead of relying on broad KDE meta groups.
 
 ## Role in KeskOS
 
@@ -33,7 +33,7 @@ Architecture: any
 
 ## Dependencies
 
-- Current hard dependencies: `dolphin`, `konsole`, `kwin`, `networkmanager`, `plasma-desktop`, `plasma-nm`, `plasma-workspace`, `powerdevil`, `bluedevil`, `pipewire`, `sddm`, `systemsettings`, `wireplumber`, `xdg-desktop-portal-kde`, `keskos-branding`, `keskos-browser-startpage`, `keskos-kickoff`, `keskos-plasma-layout`, `keskos-plymouth`, `keskos-quickshell-hud`, `keskos-sddm-theme`, `keskos-theme`, and `keskos-workspace-switcher`.
+- Current hard dependencies: `aurorae`, `breeze`, `breeze-icons`, `bluedevil`, `dolphin`, `dunst`, `kde-cli-tools`, `kglobalacceld`, `kio`, `kio-extras`, `kirigami`, `konsole`, `kscreen`, `kwin`, `networkmanager`, `pipewire`, `pipewire-pulse`, `plasma-desktop`, `plasma-nm`, `plasma-pa`, `plasma-workspace`, `polkit-kde-agent`, `powerdevil`, `qqc2-desktop-style`, `sddm`, `systemsettings`, `wireplumber`, `xdg-desktop-portal`, `xdg-desktop-portal-kde`, `keskos-branding`, `keskos-browser-startpage`, `keskos-kickoff`, `keskos-plasma-layout`, `keskos-plymouth`, `keskos-quickshell-hud`, `keskos-sddm-theme`, `keskos-settings`, `keskos-theme`, `keskos-tools`, `keskos-welcome`, and `keskos-workspace-switcher`.
 - Build with `makepkg -s --noconfirm`.
 
 ## Build
@@ -45,7 +45,7 @@ makepkg -s --noconfirm
 ## Packaging notes
 
 - This repo stays separate from `keskos-desktop`, but it should track the package names produced there.
-- It should stay focused on the desktop shell and avoid turning into a grab-bag for optional apps.
+- It should stay focused on the desktop shell, required session services, and branded helpers instead of turning into a grab-bag for optional apps or KDE mega-groups.
 
 ## Troubleshooting
 

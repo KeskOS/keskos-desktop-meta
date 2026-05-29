@@ -1,25 +1,22 @@
 pkgname=keskos-desktop-meta
 pkgver=0.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Meta package for the default KeskOS Plasma desktop shell and visual stack"
 arch=(any)
 url="https://github.com/KeskOS/keskos-desktop-meta"
 license=(GPL-3.0-or-later)
 depends=(
+  aurorae
+  breeze
+  breeze-icons
+  dunst
   dolphin
-  konsole
-  kwin
-  networkmanager
-  plasma-desktop
-  plasma-nm
-  plasma-workspace
-  powerdevil
   bluedevil
-  pipewire
-  sddm
-  systemsettings
-  wireplumber
-  xdg-desktop-portal-kde
+  kde-cli-tools
+  kglobalacceld
+  kio
+  kio-extras
+  kirigami
   keskos-branding
   keskos-browser-startpage
   keskos-kickoff
@@ -27,8 +24,29 @@ depends=(
   keskos-plymouth
   keskos-quickshell-hud
   keskos-sddm-theme
+  keskos-settings
   keskos-theme
+  keskos-tools
+  keskos-welcome
   keskos-workspace-switcher
+  konsole
+  kscreen
+  kwin
+  networkmanager
+  pipewire
+  pipewire-pulse
+  plasma-desktop
+  plasma-nm
+  plasma-pa
+  plasma-workspace
+  polkit-kde-agent
+  powerdevil
+  qqc2-desktop-style
+  sddm
+  systemsettings
+  wireplumber
+  xdg-desktop-portal
+  xdg-desktop-portal-kde
 )
 source=()
 sha256sums=()
